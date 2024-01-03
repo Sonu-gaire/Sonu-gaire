@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Page</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/page2style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="initDateConverter()">
+    
+    <header>
+        <h1>Self Developed Services</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#">SELF DEVELOPED SERVICES</a></li>
+            <li><a href="page3.html">My RESUME</a></li>
+          
+        </ul>
+    </nav>
+    <main><br>
+        <p> Please check out my self developed services.</p>
+    </section><br>
+    <button onclick="toggleDarkLightMode()">Turn Dark or Light Mode</button>
+
+    <hr>
+    <h3> 1. Age Calculator</h3>
+    <section class="date-converter">
+        <label for="inputDate">Enter Your Date (AD): </label>
+        <input type="date" id="inputDate">
+        <button onclick="convertToDate()">Convert to Age</button>
+        <p>Your Age: <span id="ageOutput"></span></p>
+    </section>
+   
+
+    <hr>
+    <h3>2. Simple Calculator</h3>
+    <input type="number" id="num1" placeholder="Number">
+<input type="number" id="num2" placeholder="Number">
+<button onclick="calculate('+')">Add</button>
+<button onclick="calculate('-')">Subtract</button>
+<button onclick="calculate('*')">Multiply</button>
+<button onclick="calculate('/')">Divide</button>
+<p>Answer is: <span id="result"></span></p>
+<hr>
+
+
+    <h3> 3. Bucket List </h3>
+
+    <input type="text" id="bucketinput" placeholder="Write some notes">
+<button onclick="addTodo()">Add to list</button>
+<ul id="bucketList"></ul>
+
+
+      <p> </p>
+    </main>
+    <footer>
+        <p> 2024 Sonu Gaire</p>
+    </footer>
+</body>
+</html>

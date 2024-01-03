@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #444;
+}
+
+.dark-mode nav ul li a {
+    color: white;
+}
+
+.dark-mode nav ul li a:hover {
+    background-color: #666;
+    color: black;
+}
